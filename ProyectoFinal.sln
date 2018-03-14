@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProyectoFinal", "ProyectoFinal\ProyectoFinal.vbproj", "{B82295D2-FFCC-412F-AA4B-B9963BC110FD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TiendaInfomaticaSetup", "TiendaInfomaticaSetup\TiendaInfomaticaSetup.vdproj", "{DF3BC54B-55A6-4A38-90C9-67B33F11C2B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B82295D2-FFCC-412F-AA4B-B9963BC110FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82295D2-FFCC-412F-AA4B-B9963BC110FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82295D2-FFCC-412F-AA4B-B9963BC110FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82295D2-FFCC-412F-AA4B-B9963BC110FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3BC54B-55A6-4A38-90C9-67B33F11C2B1}.Debug|Any CPU.ActiveCfg = Debug
+		{DF3BC54B-55A6-4A38-90C9-67B33F11C2B1}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

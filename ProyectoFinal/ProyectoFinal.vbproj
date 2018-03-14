@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B82295D2-FFCC-412F-AA4B-B9963BC110FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectoFinal.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoFinal</RootNamespace>
+    <AssemblyName>ProyectoFinal</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoFinal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoFinal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticulosDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArticulosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArtListDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArtListDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClaseDecimal.vb" />
+    <Compile Include="DataSetAlbaranConpra.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAlbaranConpra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetAlbaranV.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAlbaranV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetAlbaranVenta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAlbaranVenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetArticulos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFacturaC1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFacturaC1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFacturaV.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFacturaV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpresaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GestionDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibroIva.Designer.vb">
+      <DependentUpon>LibroIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LibroIva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoAlbaranCompra.vb">
+      <DependentUpon>ListadoAlbaranCompra.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ListadoAlbaran.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoAlbaran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListadoArticulos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoArticulos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListadoArticulosDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoArticulosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoArticulosEstadisticas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoArticulosEstadisticas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListadoClientes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoClientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListadoClientesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoClientesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoEstadisticaTipoProductos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoEstadisticaTipoProductos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListadoFacturaCompra.vb">
+      <DependentUpon>ListadoFacturaCompra.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ListadoFacturaVentaAgrupada.vb">
+      <DependentUpon>ListadoFacturaVentaAgrupada.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ListadoFacturaVenta.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoFacturaVenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListadoTodasFacturasVenta.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoTodasFacturasVenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCliente.Designer.vb">
+      <DependentUpon>MantenimientoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCompra.Designer.vb">
+      <DependentUpon>MantenimientoCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoVentas.Designer.vb">
+      <DependentUpon>MantenimientoVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloEmpresa.vb" />
+    <Compile Include="ProductosEstadisticasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductosEstadisticasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TiendaInformaticaDataSetClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiendaInformaticaDataSetClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TiposArticuloDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiposArticuloDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaAcercaDe.Designer.vb">
+      <DependentUpon>VentanaAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaAlbaran.Designer.vb">
+      <DependentUpon>VentanaAlbaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaAlbaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaCompra.Designer.vb">
+      <DependentUpon>VentanaCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaEmail.Designer.vb">
+      <DependentUpon>VentanaEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaFacturacionPorCliente.Designer.vb">
+      <DependentUpon>VentanaFacturacionPorCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaFacturacionPorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaMantenimientoCompra.Designer.vb">
+      <DependentUpon>VentanaMantenimientoCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaMantenimientoCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaMantenimientoVenta.Designer.vb">
+      <DependentUpon>VentanaMantenimientoVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaMantenimientoVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaNuevoCliente.Designer.vb">
+      <DependentUpon>VentanaNuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaNuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaEmpresa.Designer.vb">
+      <DependentUpon>VentanaEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.Designer.vb">
+      <DependentUpon>VentanaPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VentanaProductos.Designer.vb">
+      <DependentUpon>VentanaProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaReparaciones.Designer.vb">
+      <DependentUpon>VentanaReparaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaReparaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaProveedores.Designer.vb">
+      <DependentUpon>VentanaProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaTipoArticulos.Designer.vb">
+      <DependentUpon>VentanaTipoArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaTipoArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor.Designer.vb">
+      <DependentUpon>Visor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LibroIva.resx">
+      <DependentUpon>LibroIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoAlbaranCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoAlbaranCompra.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoAlbaran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoAlbaran.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoArticulos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoArticulos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoArticulosEstadisticas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoArticulosEstadisticas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoClientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoClientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoEstadisticaTipoProductos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoEstadisticaTipoProductos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoFacturaCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoFacturaCompra.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoFacturaVentaAgrupada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoFacturaVentaAgrupada.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoFacturaVenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoFacturaVenta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoTodasFacturasVenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoTodasFacturasVenta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoCliente.resx">
+      <DependentUpon>MantenimientoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoCompra.resx">
+      <DependentUpon>MantenimientoCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoVentas.resx">
+      <DependentUpon>MantenimientoVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaAcercaDe.resx">
+      <DependentUpon>VentanaAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaAlbaran.resx">
+      <DependentUpon>VentanaAlbaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaCompra.resx">
+      <DependentUpon>VentanaCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaEmail.resx">
+      <DependentUpon>VentanaEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaFacturacionPorCliente.resx">
+      <DependentUpon>VentanaFacturacionPorCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaMantenimientoCompra.resx">
+      <DependentUpon>VentanaMantenimientoCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaMantenimientoVenta.resx">
+      <DependentUpon>VentanaMantenimientoVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaNuevoCliente.resx">
+      <DependentUpon>VentanaNuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaEmpresa.resx">
+      <DependentUpon>VentanaEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaProductos.resx">
+      <DependentUpon>VentanaProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaReparaciones.resx">
+      <DependentUpon>VentanaReparaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaProveedores.resx">
+      <DependentUpon>VentanaProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaTipoArticulos.resx">
+      <DependentUpon>VentanaTipoArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor.resx">
+      <DependentUpon>Visor.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ArticulosDataSet.xsc">
+      <DependentUpon>ArticulosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArticulosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArticulosDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArticulosDataSet.xss">
+      <DependentUpon>ArticulosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArtListDS.xsc">
+      <DependentUpon>ArtListDS.xsd</DependentUpon>
+    </None>
+    <None Include="ArtListDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArtListDS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArtListDS.xss">
+      <DependentUpon>ArtListDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAlbaranConpra.xsc">
+      <DependentUpon>DataSetAlbaranConpra.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAlbaranConpra.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAlbaranConpra.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetAlbaranConpra.xss">
+      <DependentUpon>DataSetAlbaranConpra.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAlbaranV.xsc">
+      <DependentUpon>DataSetAlbaranV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAlbaranV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAlbaranV.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetAlbaranV.xss">
+      <DependentUpon>DataSetAlbaranV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAlbaranVenta.xsc">
+      <DependentUpon>DataSetAlbaranVenta.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAlbaranVenta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAlbaranVenta.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetAlbaranVenta.xss">
+      <DependentUpon>DataSetAlbaranVenta.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetArticulos.xsc">
+      <DependentUpon>DataSetArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetArticulos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetArticulos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetArticulos.xss">
+      <DependentUpon>DataSetArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClientes.xsc">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetClientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetClientes.xss">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFacturaC1.xsc">
+      <DependentUpon>DataSetFacturaC1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFacturaC1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFacturaC1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFacturaC1.xss">
+      <DependentUpon>DataSetFacturaC1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFacturaV.xsc">
+      <DependentUpon>DataSetFacturaV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFacturaV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFacturaV.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFacturaV.xss">
+      <DependentUpon>DataSetFacturaV.xsd</DependentUpon>
+    </None>
+    <None Include="EmpresaDataSet.xsc">
+      <DependentUpon>EmpresaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmpresaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpresaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmpresaDataSet.xss">
+      <DependentUpon>EmpresaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GestionDataSet1.xsc">
+      <DependentUpon>GestionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GestionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GestionDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GestionDataSet1.xss">
+      <DependentUpon>GestionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ListadoArticulosDataSet.xsc">
+      <DependentUpon>ListadoArticulosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ListadoArticulosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListadoArticulosDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListadoArticulosDataSet.xss">
+      <DependentUpon>ListadoArticulosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ListadoClientesDataSet.xsc">
+      <DependentUpon>ListadoClientesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ListadoClientesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListadoClientesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListadoClientesDataSet.xss">
+      <DependentUpon>ListadoClientesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductosEstadisticasDataSet.xsc">
+      <DependentUpon>ProductosEstadisticasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductosEstadisticasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductosEstadisticasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductosEstadisticasDataSet.xss">
+      <DependentUpon>ProductosEstadisticasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProveedoresDataSet.xsc">
+      <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProveedoresDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProveedoresDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProveedoresDataSet.xss">
+      <DependentUpon>ProveedoresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TiendaInformaticaDataSetClientes.xsc">
+      <DependentUpon>TiendaInformaticaDataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="TiendaInformaticaDataSetClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TiendaInformaticaDataSetClientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TiendaInformaticaDataSetClientes.xss">
+      <DependentUpon>TiendaInformaticaDataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="TiposArticuloDataSet.xsc">
+      <DependentUpon>TiposArticuloDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TiposArticuloDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TiposArticuloDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TiposArticuloDataSet.xss">
+      <DependentUpon>TiposArticuloDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TiendaInformatica.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TiendaInformatica_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TiendaInformatica.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
